@@ -1,0 +1,157 @@
+nav.main-nav {
+  flex-basis: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+nav.main-nav ul {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+nav.main-nav ul a {
+  display: block;
+  flex-basis: 300px;
+  margin: 10px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(45, 46, 45);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav.main-nav ul a.active {
+  background-color: rgb(203, 208, 213);
+}
+
+nav.main-nav ul a:hover {
+  background-color: rgb(203, 208, 213);
+}
+/* -----------nav-burger------------------ */
+nav.burger-nav {
+  display: none;
+}
+@media (max-width: 1023px) {
+  nav.main-nav {
+    display: none;
+  }
+  nav.burger-nav {
+    display: block;
+  }
+  nav.burger-nav ul {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s;
+  }
+  nav.burger-nav ul a {
+    width: 60%;
+    height: 100%;
+    flex-basis: 8vh;
+    padding: 8vh 3vh;
+    line-height: 100%;
+    align-self: center;
+    align-content: center;
+    border-bottom: 1px solid rgb(45, 46, 45);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: rgb(45, 46, 45);
+    cursor: pointer;
+  }
+  /* --------------burger- menu- active ----------*/
+  nav.burger-nav.active {
+    display: block;
+    width: 100%;
+    height: 100vh;
+  }
+  nav.burger-nav.active ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 10vh;
+    height: 100vh;
+    background-color: rgb(203, 208, 213);
+  }
+
+  nav.burger-nav.active ul a:hover {
+    background-color: #fff;
+  }
+  /* ----------------------burger-icon -----------------*/
+  nav.burger-nav .burger {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 2;
+  }
+
+  .first-span,
+  .second-span,
+  .third-span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 25px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: rgb(45, 46, 45);
+
+    transform-origin: right;
+    transform: rotate(0);
+    transition: 0.3s;
+  }
+  .second-span {
+    top: 30px;
+    right: 15px;
+  }
+  .third-span {
+    top: 40px;
+  }
+  nav.burger-nav .burger:hover .first-span,
+  nav.burger-nav .burger:hover .third-span {
+    width: 25px;
+  }
+  nav.burger-nav .burger:hover .second-span {
+    width: 25px;
+    right: 20px;
+  }
+   {
+    width: 20px;
+  }
+  nav.burger-nav .burger.active .first-span {
+    width: 30px;
+    transform: rotate(-45deg);
+  }
+  nav.burger-nav .burger.active .second-span {
+    width: 0;
+  }
+  nav.burger-nav .burger.active .third-span {
+    width: 30px;
+    transform: rotate(45deg);
+  }
+}
