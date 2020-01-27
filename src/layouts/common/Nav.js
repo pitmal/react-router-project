@@ -27,7 +27,6 @@ const navigationItems = [
 
 const Nav = () => {
   const [activeBurger, setActiveBurger] = useState(false);
-  console.log(activeBurger);
   const nav = navigationItems.map(item => (
     <NavLink
       key={item.id}

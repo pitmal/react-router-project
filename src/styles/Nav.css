@@ -140,18 +140,16 @@ nav.burger-nav {
     width: 25px;
     right: 20px;
   }
-   {
-    width: 20px;
-  }
+
   nav.burger-nav .burger.active .first-span {
-    width: 30px;
+    width: 28.25px;
     transform: rotate(-45deg);
   }
   nav.burger-nav .burger.active .second-span {
     width: 0;
   }
   nav.burger-nav .burger.active .third-span {
-    width: 30px;
+    width: 28.25px;
     transform: rotate(45deg);
   }
 }
