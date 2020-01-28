@@ -3,6 +3,7 @@ import img1 from "../images/home-page-1.jpg";
 import img2 from "../images/home-page-2.jpg";
 import img3 from "../images/home-page-3.jpg";
 import "../styles/Slider.css";
+import Pentagons from "./Pentagons";
 const images = [img1, img2, img3];
 const content = [
   {
@@ -33,7 +34,7 @@ const Slider = () => {
     };
   }, []);
   const style = { backgroundImage: `url(${images[sliderSrc]})` };
-  console.log(sliderSrc);
+
   return (
     <>
       <div
@@ -43,6 +44,7 @@ const Slider = () => {
         style={style}
       ></div>
       <div className="content-slider-wraper">
+        {<Pentagons />}
         <h1>{content[sliderSrc].title}</h1>
         <p>{content[sliderSrc].text}</p>
       </div>

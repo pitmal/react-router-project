@@ -1,0 +1,73 @@
+.pentagon-wrapper {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+.pentagon.green,
+.pentagon.dirtBlue,
+.pentagon.darkGrey,
+.pentagon.lightGrey {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  z-index: 0;
+  animation: pentagonScale infinite 5s;
+}
+.pentagon.green {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.pentagon.dirtBlue {
+  transform: translate(-80%, -70%) rotate(-20deg);
+}
+.pentagon.darkGrey {
+  transform: translate(-30%, -10%) rotate(95deg);
+}
+.pentagon.lightGrey {
+  transform: translate(-100%, -30%) rotate(-160deg);
+}
+.pentagon.green .before,
+.pentagon.dirtBlue .before,
+.pentagon.darkGrey .before,
+.pentagon.lightGrey .before {
+  position: absolute;
+  top: -320px;
+  left: -80px;
+  width: 0;
+  height: 0;
+
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  z-index: 0;
+}
+.pentagon.green .before {
+  border-bottom: 160px solid rgba(87, 94, 32, 0.8);
+}
+.pentagon.dirtBlue .before {
+  border-bottom: 160px solid rgba(60, 74, 86, 0.8);
+}
+.pentagon.darkGrey .before {
+  border-bottom: 160px solid rgba(45, 46, 45, 0.8);
+}
+.pentagon.lightGrey .before {
+  border-bottom: 160px solid rgba(203, 208, 213, 0.8);
+}
+@keyframes pentagonScale {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
