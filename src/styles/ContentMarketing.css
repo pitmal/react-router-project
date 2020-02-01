@@ -1,0 +1,55 @@
+.marketing-section {
+  background-color: rgb(203, 208, 213);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.marketing-section .dirtBlue-ofers,
+.marketing-section .dirtBlue-ofers2,
+.marketing-section .dirtBlue-ofers3 {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: rotate(-20deg);
+}
+.marketing-section .dirtBlue-ofers2 {
+  top: 50%;
+  left: 25%;
+  transform: rotate(180deg);
+}
+.marketing-section .dirtBlue-ofers3 {
+  top: 45%;
+  left: 35%;
+  transform: rotate(-10deg);
+}
+.marketing-section .dirtBlue-ofers:before,
+.marketing-section .dirtBlue-ofers2:before,
+.marketing-section .dirtBlue-ofers3:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 160px solid rgba(60, 74, 110, 0.8);
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  bottom: 160px;
+  left: -80px;
+}
+.offers-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  z-index: 2;
+}
+.offers-text-marketing {
+  color: white;
+  text-align: center;
+  z-index: 2;
+  font-size: 1.4rem;
+  padding: 10%;
+}

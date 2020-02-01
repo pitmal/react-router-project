@@ -46,6 +46,7 @@ nav.burger-nav {
   }
   nav.burger-nav {
     display: block;
+    z-index: 998;
   }
   nav.burger-nav ul {
     position: fixed;

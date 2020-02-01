@@ -1,7 +1,7 @@
 import React from "react";
 import Pentagon from "./Pentagon";
 // green:rgb(87,94,32);
-// greey-blue:rgb(60,74,86);
+// greey-blue:rgb(60,74,110);
 // dark-grey:rgb(45,46,45)
 // light-grey:rgb(203,208,213)
 const Pentagons = () => {
@@ -12,7 +12,7 @@ const Pentagons = () => {
     },
     {
       name: "dirtBlue",
-      rgba: "60,74,86,0.8"
+      rgba: "60,74,110,0.8"
     },
     {
       name: "darkGrey",
