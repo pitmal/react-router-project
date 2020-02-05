@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import Pentagon from "../../../components/Pentagon";
+import checkOffset from "../../../components/CheckOffset";
 import "../../../styles/ContentAnalytics.css";
-const ContentAnalytics = () => {
+const ContentAnalytics = ({ scroll }) => {
+  const contentAnalyticsRef = useRef();
+  const active = checkOffset(contentAnalyticsRef, scroll);
   return (
-    <div className="analytics-section">
+    <div className="analytics-section" ref={contentAnalyticsRef}>
       <h2 className="offers-title-analytics">
         Zaprojektujemy dla Ciebie w pełni responsywną stronę internetową{" "}
       </h2>
@@ -18,9 +21,21 @@ const ContentAnalytics = () => {
         tincidunt. Sed a odio vestibulum nisl gravida rutrum. Pellentesque eget
         dapibus lacus, eget volutpat lor
       </p>
-      <Pentagon key="darkGrey" color="45,46,45,0.8" name="darkGrey-ofers" />
-      <Pentagon key="darkGrey2" color="45,46,45,0.8" name="darkGrey-ofers2" />
-      <Pentagon key="darkGrey3" color="45,46,45,0.8" name="darkGrey-ofers3" />
+      <Pentagon
+        key="darkGrey"
+        color="45,46,45,0.8"
+        name={`darkGrey-ofers ${active}`}
+      />
+      <Pentagon
+        key="darkGrey2"
+        color="45,46,45,0.8"
+        name={`darkGrey-ofers2 ${active}`}
+      />
+      <Pentagon
+        key="darkGrey3"
+        color="45,46,45,0.8"
+        name={`darkGrey-ofers3 ${active}`}
+      />
     </div>
   );
 };

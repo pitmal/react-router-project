@@ -25,7 +25,7 @@ nav.main-nav ul a {
   text-decoration: none;
   cursor: pointer;
   color: rgb(45, 46, 45);
-  border-radius: 5px;
+  /* border-radius: 5px; */
   transition: 0.3s;
 }
 

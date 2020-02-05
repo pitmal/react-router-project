@@ -10,7 +10,6 @@ const Pentagon = ({ color, name }) => {
     borderRight: "80px solid transparent"
   };
 
-  console.log(name);
   return (
     <>
       <div className={`pentagon ${name}`} style={style}>

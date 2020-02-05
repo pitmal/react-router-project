@@ -25,6 +25,8 @@
   text-transform: uppercase;
   color: rgb(60, 74, 86);
   transform: translate(-50%, -50%);
+}
+.marketing-website .h1wrapper h1.offers.active {
   animation: responsiveH1 5s 1 both;
 }
 .marketing-website .h1wrapper p.offersAlt {
@@ -37,6 +39,9 @@
   text-transform: uppercase;
   color: rgb(45, 46, 45);
   transform: translate(-50%, -50%);
+}
+
+.marketing-website .h1wrapper p.offersAlt.active {
   animation: responsiveP 5s 1 both;
 }
 @media (max-width: 1023px) {
