@@ -1,14 +1,11 @@
-import React, { useRef } from "react";
+import React from "react";
 import Pentagon from "../../../components/Pentagon";
-import checkOffset from "../../../components/CheckOffset";
 import "../../../styles/ContentAnalytics.css";
-const ContentAnalytics = ({ scroll }) => {
-  const contentAnalyticsRef = useRef();
-  const active = checkOffset(contentAnalyticsRef, scroll);
+const ContentAnalytics = ({ active }) => {
   return (
-    <div className="analytics-section" ref={contentAnalyticsRef}>
+    <>
       <h2 className="offers-title-analytics">
-        Zaprojektujemy dla Ciebie w pełni responsywną stronę internetową{" "}
+        Zaprojektujemy dla Ciebie w pełni responsywną stronę internetową
       </h2>
       <p className="offers-text-analytics">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut
@@ -36,7 +33,7 @@ const ContentAnalytics = ({ scroll }) => {
         color="45,46,45,0.8"
         name={`darkGrey-ofers3 ${active}`}
       />
-    </div>
+    </>
   );
 };
 export default ContentAnalytics;

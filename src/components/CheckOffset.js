@@ -4,7 +4,6 @@ const CheckOffset = (ref, scroll) => {
     ? sectionOffsetTop.offsetTop - sectionOffsetTop.offsetHeight / 2
     : null;
   const active = scroll >= offSetTop ? "active" : "";
-
   return active;
 };
 export default CheckOffset;

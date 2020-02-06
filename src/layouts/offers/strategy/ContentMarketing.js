@@ -1,13 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
 import Pentagon from "../../../components/Pentagon";
-import checkOffset from "../../../components/CheckOffset";
 import "../../../styles/ContentMarketing.css";
-const ContentMarketing = ({ scroll }) => {
-  const contentMarketingRef = useRef();
-  const active = checkOffset(contentMarketingRef, scroll);
-
+const ContentMarketing = ({ active }) => {
   return (
-    <div className="marketing-section" ref={contentMarketingRef}>
+    <>
       <h2 className="offers-title">
         Zaprojektujemy dla Ciebie w pełni responsywną stronę internetową{" "}
       </h2>
@@ -37,7 +33,7 @@ const ContentMarketing = ({ scroll }) => {
         color="60,74,110,0.8"
         name={`dirtBlue-ofers3 ${active}`}
       />
-    </div>
+    </>
   );
 };
 export default ContentMarketing;
