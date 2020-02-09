@@ -56,6 +56,7 @@
 .pentagon.lightGrey .before {
   border-bottom: 160px solid rgba(203, 208, 213, 0.8);
 }
+
 @keyframes pentagonScale {
   0% {
     opacity: 0;

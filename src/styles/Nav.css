@@ -154,3 +154,8 @@ nav.burger-nav {
     transform: rotate(45deg);
   }
 }
+@media (max-width: 667px) and (orientation: landscape) {
+  nav.burger-nav .burger {
+    top: -4px;
+  }
+}

@@ -1,0 +1,323 @@
+.cenniczek-section {
+  height: 960px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(203, 208, 213, 0.8);
+  z-index: 0;
+}
+.cenniczek-section .description-project {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  top: 15%;
+  left: 10%;
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+.cenniczek-section .description-project h1 {
+  font-size: 3rem;
+  z-index: 2;
+}
+
+.cenniczek-section .description-project h1 a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  z-index: 999;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.3s;
+}
+.cenniczek-section .description-project h1 a:hover {
+  transform: scale(1.1);
+}
+.cenniczek-section .description-project p {
+  font-size: 2rem;
+  z-index: 2;
+}
+.cenniczek-section .example-project {
+  position: absolute;
+  width: 70%;
+  height: 80%;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+/* ------------- transition img----------- */
+.cenniczek-section .example-project img {
+  position: absolute;
+  bottom: -150%;
+  transition: 0.6s;
+}
+.cenniczek-section .example-project img:nth-child(1) {
+  height: 40%;
+  z-index: 2;
+  right: 50%;
+}
+.cenniczek-section .example-project img:nth-child(2) {
+  height: 60%;
+
+  right: 10%;
+  transition: 0.6s 0.2s;
+}
+.cenniczek-section .example-project img:nth-child(3) {
+  height: 30%;
+
+  right: 20%;
+  transition: 0.6s 0.4s;
+}
+.cenniczek-section .example-project img:nth-child(4) {
+  height: 25%;
+  transition: 0.6s 0.6s;
+  right: 8%;
+}
+/* -----active transition------- */
+.cenniczek-section .example-project.active img {
+  position: absolute;
+  bottom: 15%;
+}
+.cenniczek-section .example-project.active img:nth-child(1) {
+  height: 40%;
+  z-index: 2;
+  right: 50%;
+}
+.cenniczek-section .example-project.active img:nth-child(2) {
+  height: 60%;
+
+  right: 10%;
+}
+.cenniczek-section .example-project.active img:nth-child(3) {
+  height: 30%;
+
+  right: 20%;
+}
+.cenniczek-section .example-project.active img:nth-child(4) {
+  height: 25%;
+
+  right: 8%;
+}
+/* -------------------- pentagons styles------------------ */
+.cenniczek-section .description-project .darkGrey-realizations,
+.cenniczek-section .description-project .dirtBlue-realizations,
+.cenniczek-section .description-project .green-realizations {
+  position: absolute;
+  top: 300%;
+  left: 45%;
+  transform: rotate(-20deg);
+  transition: 0.6s;
+  z-index: -1;
+}
+.cenniczek-section .description-project .dirtBlue-realizations {
+  top: 100%;
+  left: -140%;
+  transform: rotate(10deg);
+}
+.cenniczek-section .description-project .green-realizations {
+  top: 45%;
+  left: 300%;
+  transform: rotate(-10deg);
+}
+.cenniczek-section .description-project .darkGrey-realizations:before,
+.cenniczek-section .description-project .dirtBlue-realizations:before,
+.cenniczek-section .description-project .green-realizations:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  bottom: 160px;
+  left: -80px;
+}
+.cenniczek-section .description-project .darkGrey-realizations:before {
+  border-bottom: 160px solid rgba(45, 46, 45, 0.8);
+}
+.cenniczek-section .description-project .dirtBlue-realizations:before {
+  border-bottom: 160px solid rgba(60, 74, 110, 0.8);
+}
+.cenniczek-section .description-project .green-realizations:before {
+  border-bottom: 160px solid rgba(87, 94, 32, 0.8);
+}
+/* ----- */
+
+.cenniczek-section .description-project .darkGrey-realizations.active,
+.cenniczek-section .description-project .dirtBlue-realizations.active,
+.cenniczek-section .description-project .green-realizations.active {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  transform: rotate(-20deg);
+}
+.cenniczek-section .description-project .dirtBlue-realizations.active {
+  top: 15%;
+  left: 30%;
+  transform: rotate(15deg);
+}
+.cenniczek-section .description-project .green-realizations.active {
+  top: 40%;
+  left: 15%;
+  transform: rotate(220deg);
+}
+.cenniczek-section .description-project .darkGrey-realizations.active:before,
+.cenniczek-section .description-project .dirtBlue-realizations.active:before,
+.cenniczek-section .description-project .green-realizations.active:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  /* border-bottom: 160px solid rgba(87, 94, 32, 0.8); */
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  bottom: 160px;
+  left: -80px;
+}
+.cenniczek-section .description-project .darkGrey-realizations.active:before {
+  border-bottom: 160px solid rgba(45, 46, 45, 0.8);
+}
+.cenniczek-section .description-project .dirtBlue-realizations.active:before {
+  border-bottom: 160px solid rgba(60, 74, 110, 0.8);
+}
+.cenniczek-section .description-project .green-realizations.active:before {
+  border-bottom: 160px solid rgba(87, 94, 32, 0.8);
+}
+@media (max-width: 1366px) {
+  .cenniczek-section .example-project.active img {
+    bottom: -10%;
+  }
+}
+@media (max-width: 1024px) and (orientation: landscape) {
+  .cenniczek-section {
+    height: 768px;
+  }
+}
+@media (max-width: 823px) and (orientation: landscape) {
+  .cenniczek-section {
+    height: 90vh;
+  }
+  .cenniczek-section .description-project {
+    top: 20%;
+    left: 1%;
+  }
+  .cenniczek-section .description-project h1 {
+    font-size: 2.2rem;
+  }
+  .cenniczek-section .description-project p {
+    font-size: 1.5rem;
+  }
+  .cenniczek-section .example-project.active img:nth-child(1) {
+    height: 60%;
+    right: 35%;
+  }
+  .cenniczek-section .example-project.active img:nth-child(2) {
+    right: 5%;
+    height: 90%;
+  }
+  .cenniczek-section .example-project.active img:nth-child(3) {
+    right: 20%;
+    height: 40%;
+  }
+  .cenniczek-section .example-project.active img:nth-child(4) {
+    height: 30%;
+    right: 10%;
+  }
+}
+/* -------------portrait-------------- */
+@media (max-width: 1024px) and (orientation: portrait) {
+  .cenniczek-section {
+    height: 1250px;
+  }
+}
+@media (max-width: 768px) and (orientation: portrait) {
+  .cenniczek-section {
+    height: 920px;
+  }
+}
+@media (max-width: 414px) and (orientation: portrait) {
+  .cenniczek-section {
+    height: 90vh;
+  }
+  .cenniczek-section .description-project h1 {
+    font-size: 2.2rem;
+  }
+  .cenniczek-section .description-project p {
+    font-size: 1.5rem;
+  }
+  .cenniczek-section .description-project {
+    width: 100%;
+    height: 40%;
+    top: 10%;
+    left: 0;
+  }
+  .cenniczek-section .example-project.active img {
+    bottom: -24%;
+  }
+  .cenniczek-section .example-project.active img:nth-child(1) {
+    height: 30%;
+    right: 45%;
+  }
+  .cenniczek-section .example-project.active img:nth-child(2) {
+    height: 50%;
+
+    right: 5%;
+  }
+  .cenniczek-section .example-project.active img:nth-child(3) {
+    height: 20%;
+
+    right: 20%;
+  }
+  .cenniczek-section .example-project.active img:nth-child(4) {
+    height: 15%;
+
+    right: 8%;
+  }
+}
+@media (max-width: 375px) and (orientation: portrait) {
+  .cenniczek-section .description-project {
+    width: 100%;
+    height: 20%;
+  }
+
+  .cenniczek-section .example-project.active img {
+    bottom: -20%;
+  }
+  .cenniczek-section .example-project.active img:nth-child(1) {
+    height: 30%;
+    right: 37%;
+  }
+  .cenniczek-section .example-project.active img:nth-child(2) {
+    height: 47%;
+    bottom: -10%;
+    right: 2%;
+  }
+  .cenniczek-section .example-project.active img:nth-child(3) {
+    height: 20%;
+
+    right: 15%;
+  }
+  .cenniczek-section .example-project.active img:nth-child(4) {
+    height: 15%;
+
+    right: 5%;
+  }
+}
+@media (max-width: 320px) and (orientation: portrait) {
+  .cenniczek-section .example-project.active img:nth-child(1) {
+    height: 30%;
+    right: 50%;
+  }
+  .cenniczek-section .example-project.active img:nth-child(2) {
+    right: 5%;
+  }
+  .cenniczek-section .example-project.active img:nth-child(3) {
+    right: 20%;
+  }
+  .cenniczek-section .example-project.active img:nth-child(4) {
+    height: 15%;
+
+    right: 5%;
+  }
+}

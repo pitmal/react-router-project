@@ -87,7 +87,7 @@
   font-size: 1.4rem;
   padding: 10%;
 }
-@media (orientation: landscape) and (max-width: 813px) {
+@media (orientation: landscape) and (max-width: 823px) {
   .offers-title {
     padding-top: 10%;
     font-size: 1.2rem;

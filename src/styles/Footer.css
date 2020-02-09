@@ -84,7 +84,7 @@
     width: 90%;
   }
 }
-@media (orientation: landscape) and (max-width: 813px) {
+@media (orientation: landscape) and (max-width: 823px) {
   .footer-wrapper {
     height: 90vh;
     flex-direction: row;
