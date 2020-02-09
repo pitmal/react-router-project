@@ -47,6 +47,11 @@
     font-size: 1.5rem;
   }
 }
+@media (orientation: portrait) and (max-width: 414px) {
+  .responsive-website .h1wrapper h1.offers {
+    bottom: 10%;
+  }
+}
 
 @keyframes responsiveH1 {
   0% {

@@ -2,30 +2,28 @@
   height: 80%;
   flex-basis: 30%;
   margin-left: 5%;
-  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .logo-wrapper img {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
-  z-index: 999;
+  display: block;
 }
 @media (max-width: 1023px) {
-  .logo-wrapper {
-    margin-left: 0;
-    flex-basis: 20%;
-  }
+  /* .logo-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+     transform: translate(0, -50%);
+     z-index: 999; 
+  } */
 }
-@media (max-width: 1360px) and (min-width: 1024px) {
-  .logo-wrapper img {
-    max-width: 200%;
-    max-height: 200%;
-  }
-}
+
 @media (max-width: 540px) {
   .logo-wrapper img {
-    max-width: 200%;
-    max-height: 200%;
+    max-width: 100%;
+    max-height: 100%;
   }
 }

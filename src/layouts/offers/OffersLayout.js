@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import imgMarketing from "../../images/dlugofalowa-strategia-marketingu-internetowego.jpg";
 import imgAnalytics from "../../images/certyfkowana-znajamosc-narzedzi-analityki-internetowej.jpg";
 import Header from "../common/Header";
+import Footer from "../common/Footer";
 import TitleResponsive from "./responsive/TitleResponsive";
 import ContentResponsive from "./responsive/ContentResponsive";
 import TitleMarketing from "./strategy/TitleMarketing";
@@ -26,6 +27,9 @@ const OffersLayout = () => {
   //  ------------ ContentAnalytic init----------
   const [contentAnalyticActive, setContentAnalytic] = useState("");
   const contentAnalyticsRef = useRef();
+  // --------------- Fixed Nav init
+  const [fixedNav, setFixedNav] = useState("");
+  const [fixedNavActive, setFixedNavActive] = useState("");
 
   // ----------scroll init-----------
   let scroll;
@@ -68,6 +72,16 @@ const OffersLayout = () => {
     } else {
       setContentAnalytic("");
     }
+    // ------------ Nav offsetTop----------
+    if (scroll > window.outerHeight * 0.15) {
+      setFixedNav("fixed");
+      if (scroll > window.outerHeight * 0.2) {
+        setFixedNavActive("active");
+      }
+    } else {
+      setFixedNav("");
+      setFixedNavActive("");
+    }
   };
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -76,7 +90,7 @@ const OffersLayout = () => {
   console.log("render");
   return (
     <>
-      <Header />
+      <Header fixed={fixedNav} active={fixedNavActive} />
       <TitleResponsive />
       <div className="responsive-section" ref={contentResponsiveRef}>
         <ContentResponsive active={contentReponsiveActive} />
@@ -101,6 +115,7 @@ const OffersLayout = () => {
       <div className="analytics-section" ref={contentAnalyticsRef}>
         <ContentAnalytics active={contentAnalyticActive} />
       </div>
+      <Footer />
     </>
   );
 };

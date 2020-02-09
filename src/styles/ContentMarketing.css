@@ -75,7 +75,7 @@
   left: -80px;
 }
 /* -------------- text--------------------- */
-.offers-title {
+.offers-title-marketing {
   text-align: center;
   font-size: 3rem;
   font-weight: 400;
@@ -87,4 +87,25 @@
   z-index: 2;
   font-size: 1.4rem;
   padding: 10%;
+}
+@media (orientation: landscape) and (max-width: 813px) {
+  .offers-title-marketing {
+    padding-top: 10%;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  .offers-text-marketing {
+    font-size: 1rem;
+    padding: 0 5%;
+  }
+}
+@media (orientation: portrait) and (max-width: 414px) {
+  .offers-title-marketing {
+    padding-top: 20%;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  .offers-text-marketing {
+    font-size: 1rem;
+  }
 }

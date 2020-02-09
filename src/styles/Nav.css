@@ -102,7 +102,7 @@ nav.burger-nav {
   /* ----------------------burger-icon -----------------*/
   nav.burger-nav .burger {
     position: fixed;
-    top: 10px;
+    top: 0;
     right: 10px;
     width: 70px;
     height: 70px;

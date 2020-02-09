@@ -4,7 +4,7 @@ import "../../../styles/ContentMarketing.css";
 const ContentMarketing = ({ active }) => {
   return (
     <>
-      <h2 className="offers-title">
+      <h2 className="offers-title-marketing">
         Zaprojektujemy dla Ciebie w pełni responsywną stronę internetową{" "}
       </h2>
       <p className="offers-text-marketing">

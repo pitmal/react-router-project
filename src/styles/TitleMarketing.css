@@ -52,6 +52,14 @@
     font-size: 1.5rem;
   }
 }
+@media (orientation: portrait) and (max-width: 414px) {
+  .marketing-website .h1wrapper h1.offers {
+    top: 40%;
+  }
+  .marketing-website .h1wrapper p.offersAlt {
+    top: 50%;
+  }
+}
 
 @keyframes responsiveH1 {
   0% {
