@@ -1,0 +1,322 @@
+.contact-page {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.contact-description {
+  flex-basis: 45%;
+  color: white;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.contact-description h3 {
+  font-size: 3rem;
+  z-index: 0;
+  text-transform: uppercase;
+}
+.contact-description p {
+  font-size: 2.5rem;
+  z-index: 0;
+}
+
+.contact-form {
+  flex-basis: 45%;
+
+  height: 90%;
+}
+.contact-form .allert {
+  display: none;
+}
+.contact-form .allert.active,
+.contact-form .allert.active-msg {
+  display: block;
+  width: 90%;
+  text-align: center;
+  padding: 20px 40px;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.8);
+  z-index: 0;
+}
+.contact-form .allert.active-msg {
+  background-color: rgba(14, 170, 14, 0.8);
+}
+.contact-form .allert.active .fas,
+.contact-form .allert.active-msg .fas {
+  font-size: 18px;
+  color: white;
+  padding-right: 10px;
+}
+/* .fas .fa-exclamation-circle {
+  color: white;
+  font-size: 16px;
+} */
+/* -------------------- pentagons styles------------------ */
+.contact-description .darkGrey-realizations,
+.contact-description .dirtBlue-realizations,
+.contact-description .green-realizations {
+  position: absolute;
+  top: 50%;
+  left: -150%;
+  transform: rotate(250deg);
+  transition: 0.6s;
+  z-index: 0;
+}
+.contact-description .dirtBlue-realizations {
+  top: 50%;
+  left: -140%;
+  transform: rotate(320deg);
+  transition: 0.6s 0.1s;
+}
+.contact-description .green-realizations {
+  top: 50%;
+  left: -150%;
+  transform: rotate(300deg);
+  transition: 0.6s 0.2s;
+}
+.contact-description .darkGrey-realizations:before,
+.contact-description .dirtBlue-realizations:before,
+.contact-description .green-realizations:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  bottom: 160px;
+  left: -80px;
+}
+.contact-description .darkGrey-realizations:before {
+  border-bottom: 160px solid rgba(45, 46, 45, 0.8);
+}
+.contact-description .dirtBlue-realizations:before {
+  border-bottom: 160px solid rgba(60, 74, 110, 0.8);
+}
+.contact-description .green-realizations:before {
+  border-bottom: 160px solid rgba(87, 94, 32, 0.8);
+}
+/* ----- */
+
+.contact-description .darkGrey-realizations.active,
+.contact-description .dirtBlue-realizations.active,
+.contact-description .green-realizations.active {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  transform: rotate(-20deg);
+}
+.contact-description .dirtBlue-realizations.active {
+  top: 42%;
+  left: 16%;
+  transform: rotate(15deg);
+}
+.contact-description .green-realizations.active {
+  top: 50%;
+  left: 15%;
+  transform: rotate(220deg);
+}
+.contact-description .darkGrey-realizations.active:before,
+.contact-description .dirtBlue-realizations.active:before,
+.contact-description .green-realizations.active:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  /* border-bottom: 160px solid rgba(87, 94, 32, 0.8); */
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  bottom: 160px;
+  left: -80px;
+}
+.contact-description .darkGrey-realizations.active:before {
+  border-bottom: 160px solid rgba(45, 46, 45, 0.8);
+}
+.contact-description .dirtBlue-realizations.active:before {
+  border-bottom: 160px solid rgba(60, 74, 110, 0.8);
+}
+.contact-description .green-realizations.active:before {
+  border-bottom: 160px solid rgba(87, 94, 32, 0.8);
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 2rem;
+}
+input[type="text"],
+input[type="e-mail"] {
+  width: 80%;
+  height: 50px;
+  padding: 20px;
+  margin: 15px;
+  font-size: 18px;
+  border: 1px solid white;
+}
+textarea {
+  width: 80%;
+  height: 200px;
+  padding: 20px;
+  margin: 15px;
+  font-size: 18px;
+  border: 1px solid white;
+}
+input[type="submit"] {
+  width: 40%;
+  height: 50px;
+  padding: 5px 15px;
+  margin: 15px;
+  font-size: 18px;
+  background-color: green;
+  color: white;
+  text-transform: uppercase;
+  border: 1px solid white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  /* background-color: rgb(87, 94, 32); */
+  color: white;
+  border: 2px solid white;
+}
+@media (max-width: 823px) and (orientation: landscape) {
+  .contact-description {
+    flex-basis: 45%;
+  }
+  .contact-description h3 {
+    font-size: 2rem;
+  }
+  .contact-description p {
+    font-size: 1.5rem;
+  }
+  .contact-description .darkGrey-realizations,
+  .contact-description .dirtBlue-realizations,
+  .contact-description .green-realizations {
+    z-index: 0;
+  }
+  .contact-form form {
+    height: 80%;
+    z-index: 0;
+  }
+  input[type="text"],
+  input[type="e-mail"] {
+    height: 20px;
+    padding: 10px;
+    margin: 15px;
+    font-size: 14px;
+  }
+  textarea {
+    height: 100px;
+    padding: 10px;
+    margin: 15px;
+    font-size: 14px;
+  }
+  input[type="submit"] {
+    height: 40px;
+  }
+}
+@media (max-width: 667px) and (orientation: landscape) {
+  .contact-description h3 {
+    font-size: 1.5rem;
+  }
+  .contact-description p {
+    font-size: 1.2rem;
+  }
+  input[type="text"],
+  input[type="e-mail"] {
+    height: 20px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 12px;
+  }
+  textarea {
+    height: 100px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 12px;
+  }
+  input[type="submit"] {
+    height: 40px;
+    margin: 10px;
+    font-size: 12px;
+  }
+  .contact-form .allert.active,
+  .contact-form .allert.active-msg,
+  .contact-form .allert.active .fas {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+@media (max-width: 768px) and (orientation: portrait) {
+  .contact-page {
+    flex-direction: column;
+    height: 90vh;
+  }
+  .contact-description h3 {
+    font-size: 2rem;
+  }
+  .contact-description p {
+    font-size: 1.7rem;
+  }
+  .contact-form form {
+    flex-basis: 80%;
+  }
+  .contact-description .darkGrey-realizations,
+  .contact-description .dirtBlue-realizations,
+  .contact-description .green-realizations {
+    display: none;
+  }
+}
+@media (max-width: 414px) and (orientation: portrait) {
+  .contact-description h3 {
+    font-size: 1.5rem;
+    margin: 10px;
+  }
+  .contact-description p {
+    font-size: 1.2rem;
+  }
+  .contact-form {
+    width: 80%;
+  }
+
+  input[type="text"],
+  input[type="e-mail"] {
+    height: 20px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 14px;
+  }
+  textarea {
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 14px;
+  }
+  input[type="submit"] {
+    height: 40px;
+    margin: 10px;
+    font-size: 14px;
+  }
+  .contact-form .allert.active,
+  .contact-form .allert.active-msg,
+  .contact-form .allert.active .fas {
+    font-size: 12px;
+    padding: 5px;
+  }
+}

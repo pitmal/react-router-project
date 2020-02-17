@@ -94,6 +94,7 @@ nav.burger-nav {
     padding-top: 10vh;
     height: 100vh;
     background-color: rgb(203, 208, 213);
+    z-index: 2;
   }
 
   nav.burger-nav.active ul a:hover {
@@ -108,7 +109,7 @@ nav.burger-nav {
     height: 70px;
     cursor: pointer;
     transition: 0.3s;
-    z-index: 2;
+    z-index: 3;
   }
 
   .first-span,
