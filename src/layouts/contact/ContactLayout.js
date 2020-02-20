@@ -60,13 +60,29 @@ const ContactLayout = () => {
     }
     recaptcha.execute();
     setError(null);
+
+    await fetch("http://localhost:3002/prudentcode/server.php", {
+      method: "POST",
+      body: JSON.stringify(formValues),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    }).then(response => {
+      if (response.status === 200) {
+        response.json().then(data => {
+          if (data.status === "success") {
+            setMessage(data.message);
+          } else if (data.status === "fail") {
+            setError(`Wiadomość nie została wysłana - ${data.error}`);
+          }
+        });
+      } else if (response.status !== 200) {
+        setError("wiadomość nie została wysłana");
+      }
+    });
   };
 
-  const onResolved = () => {
-    setMessage(
-      "Wiadomość wysłana - Dziękujemy za zainteresowanie naszą ofertą."
-    );
-  };
+  const onResolved = () => {};
   return (
     <>
       <Header fixed={fixedNav} active={fixedNavActive} />

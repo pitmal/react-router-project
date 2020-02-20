@@ -5,18 +5,13 @@ const ContentAnalytics = ({ active }) => {
   return (
     <>
       <h2 className="offers-title-analytics">
-        Zaprojektujemy dla Ciebie w pełni responsywną stronę internetową
+        Podpięta analityka to potwierdzenie skutecznych działań
       </h2>
       <p className="offers-text-analytics">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut
-        gravida dolor, consectetur bibendum velit. Maecenas quis eros viverra,
-        fringilla velit vel, blandit massa. Curabitur a viverra nisi, id
-        fringilla tortor. Phasellus ac velit auctor lectus consectetur ornare
-        tincidunt quis ligula. Sed in metus elit. Suspendisse ac convallis erat,
-        non pellentesque orci. Donec ullamcorper a sapien ut malesuada.
-        Suspendisse congue erat vitae lacus commodo, eget rhoncus nulla
-        tincidunt. Sed a odio vestibulum nisl gravida rutrum. Pellentesque eget
-        dapibus lacus, eget volutpat lor
+        Nasze <strong>kwalifikacje indwywidualne Googla</strong> to gwarancja
+        poprawnych umiejętność niezbędnych do śledzenia ruchu w twojej
+        aplikacji, optymalizacji treści, zwiększenia organicznych zasięgów –
+        budowania rozpoznawalność twojej marki.
       </p>
       <Pentagon
         key="darkGrey"

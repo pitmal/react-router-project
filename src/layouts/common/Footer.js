@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logoImg from "../../images/logo-mallabs-white.png";
+import logoImg from "../../images/prudentcode-white.png";
 import "../../styles/Footer.css";
 const Footer = () => {
   return (
@@ -10,9 +10,17 @@ const Footer = () => {
         <span> Copyright &copy; 2020</span>
       </div>
       <div className="social-wrapper">
-        {<Link to="#">facebook</Link>}
-        {<Link to="#">instagram</Link>}
-        {<Link to="#">linkedIn</Link>}
+        <Link to="#">
+          <i className="fab fa-facebook-f"></i>facebook
+        </Link>
+
+        <Link to="#">
+          {" "}
+          <i className="fab fa-instagram"></i>instagram
+        </Link>
+        <Link to="#">
+          <i className="fab fa-linkedin-in"></i>linkedIn
+        </Link>
       </div>
       <div className="terms-wrapper">
         {<Link to="#">Polityka</Link>}

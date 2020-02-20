@@ -27,13 +27,17 @@
 .footer-wrapper .terms-wrapper {
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+.footer-wrapper .social-wrapper a {
+  width: 100%;
 }
 .footer-wrapper .logo-wrapper a,
 .footer-wrapper .social-wrapper a,
 .footer-wrapper .terms-wrapper a {
   display: block;
   flex-basis: 10%;
-  padding: 10%;
+  padding: 20%;
   text-decoration: none;
   color: rgb(203, 208, 213);
   text-transform: uppercase;
@@ -43,6 +47,7 @@
   transition: 0.3s;
   position: relative;
 }
+
 .footer-wrapper .logo-wrapper a:hover,
 .footer-wrapper .social-wrapper a:hover,
 .footer-wrapper .terms-wrapper a:hover {
@@ -63,6 +68,16 @@
   transform: translate(-50%, -50%);
   padding-top: 25%;
 }
+.fab {
+  font-size: 2rem;
+  padding-right: 10px;
+}
+.fab.fa-facebook-f {
+  vertical-align: -5px;
+}
+.fab.fa-instagram {
+  vertical-align: -5px;
+}
 
 @media (max-width: 860px) {
   .footer-wrapper {
@@ -78,10 +93,6 @@
   .footer-wrapper .social-wrapper,
   .footer-wrapper .terms-wrapper {
     padding: 0;
-  }
-  .footer-wrapper .logo-wrapper img {
-    padding: 10%;
-    width: 90%;
   }
 }
 @media (orientation: landscape) and (max-width: 823px) {

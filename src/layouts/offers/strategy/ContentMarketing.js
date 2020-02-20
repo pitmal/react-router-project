@@ -5,18 +5,16 @@ const ContentMarketing = ({ active }) => {
   return (
     <>
       <h2 className="offers-title-marketing">
-        Zaprojektujemy dla Ciebie w pełni responsywną stronę internetową{" "}
+        Świadomie zbudujemy wiarygodność twojej marki{" "}
       </h2>
       <p className="offers-text-marketing">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut
-        gravida dolor, consectetur bibendum velit. Maecenas quis eros viverra,
-        fringilla velit vel, blandit massa. Curabitur a viverra nisi, id
-        fringilla tortor. Phasellus ac velit auctor lectus consectetur ornare
-        tincidunt quis ligula. Sed in metus elit. Suspendisse ac convallis erat,
-        non pellentesque orci. Donec ullamcorper a sapien ut malesuada.
-        Suspendisse congue erat vitae lacus commodo, eget rhoncus nulla
-        tincidunt. Sed a odio vestibulum nisl gravida rutrum. Pellentesque eget
-        dapibus lacus, eget volutpat lorem.
+        Marketing internetowy odgrywa ogromna rolę w procesie poznawania
+        marki,ustawienie odpowiednio zoptymalizowanej kampanii reklamowej obniży
+        koszty pozyskania klienta a przemyślane określenie grup docelowych
+        korzystnie wpłynie na zwrot z inwestycji.Stworzymy dla ciebie{" "}
+        <strong>
+          kampanie CPC, poprowadzimy Sociale, przeprowadzimy audyt SEO
+        </strong>
       </p>
       <Pentagon
         key="dirtBlue"

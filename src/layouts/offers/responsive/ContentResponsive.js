@@ -8,15 +8,13 @@ const ContentResponsive = ({ active }) => {
         Zaprojektujemy dla Ciebie w pełni responsywną stronę internetową{" "}
       </h2>
       <p className="offers-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut
-        gravida dolor, consectetur bibendum velit. Maecenas quis eros viverra,
-        fringilla velit vel, blandit massa. Curabitur a viverra nisi, id
-        fringilla tortor. Phasellus ac velit auctor lectus consectetur ornare
-        tincidunt quis ligula. Sed in metus elit. Suspendisse ac convallis erat,
-        non pellentesque orci. Donec ullamcorper a sapien ut malesuada.
-        Suspendisse congue erat vitae lacus commodo, eget rhoncus nulla
-        tincidunt. Sed a odio vestibulum nisl gravida rutrum. Pellentesque eget
-        dapibus lacus, eget volutpat lorem.
+        Strony internetowe stały się skutecznym narzędziem marketingowym, które
+        docenia coraz więcej firm. Brak obecności w Sieci może znacznie utrudnić
+        rozpoznawalność marki oraz dotarcie do nowych klientów. Dobrze
+        zaprojektowana witryna internetowa wpłynie na sukces Twojej
+        firmy.Proponujemy skorzystać z bardzo funkcjonalnego rozwiązania, jakim
+        jest <strong>responsywna strona lub aplikacja internetowa.</strong>
+        Tworzymy rozwiązania oparte o najnowsze technologie dostępne na rynku.
       </p>
       <Pentagon
         key="green"
