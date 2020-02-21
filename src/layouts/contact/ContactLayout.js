@@ -144,7 +144,7 @@ const ContactLayout = () => {
         </div>
         <Recaptcha
           ref={ref => (recaptcha = ref)}
-          sitekey={"6LfFwNkUAAAAAKTwcnqeIZVhzDGZLueNXBRatiOR"}
+          sitekey={"6LdQwNkUAAAAAOEamBTym0o_v5beMwB84uMH1NrF"}
           onResolved={onResolved}
         />
       </div>
