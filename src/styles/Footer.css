@@ -94,6 +94,15 @@
   .footer-wrapper .terms-wrapper {
     padding: 0;
   }
+
+  .footer-wrapper .social-wrapper a,
+  .footer-wrapper .terms-wrapper a {
+    flex-basis: 10%;
+    padding: 10%;
+  }
+  .footer-wrapper .logo-wrapper img {
+  width: 90%;
+  }
 }
 @media (orientation: landscape) and (max-width: 823px) {
   .footer-wrapper {

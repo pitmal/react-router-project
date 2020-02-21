@@ -61,7 +61,7 @@ const ContactLayout = () => {
     recaptcha.execute();
     setError(null);
 
-    await fetch("http://localhost:3002/prudentcode/server.php", {
+    await fetch("/server.php", {
       method: "POST",
       body: JSON.stringify(formValues),
       headers: {
