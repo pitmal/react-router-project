@@ -40,7 +40,13 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     <br>
     Email: <span style=\"color:#888\">$email</span>
     <br>
-    Message: <div style=\"color:#888\">$message</div>
+    Wiadomość: <div style=\"color:#888\">$message</div>
+    </div>
+    Dziękuje za zainteresowanie ofertą.
+    <br>
+    Pozdrawiam serdecznie.
+    <div>
+    <img src=\"https://prudentcode.pl/prudentcode-dark.png\"/>
     </div>
     </body>
     </html>
