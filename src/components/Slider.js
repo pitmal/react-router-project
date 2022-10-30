@@ -7,8 +7,8 @@ import Pentagons from "./Pentagons";
 const images = [img1, img2, img3];
 const content = [
   {
-    title: "agencja interaktywna",
-    text: "projektowanie stron internetowych"
+    title: "aplikacje internetowe",
+    text: "dedykowane rozwiązania"
   },
   {
     title: "marketing internetowy",

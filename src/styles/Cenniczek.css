@@ -188,10 +188,14 @@
   .cenniczek-section .example-project.active img {
     bottom: -10%;
   }
+  .cenniczek-section {
+    height: 600px;
+  }
 }
+
 @media (max-width: 1024px) and (orientation: landscape) {
   .cenniczek-section {
-    height: 768px;
+    height: 600px;
   }
 }
 @media (max-width: 823px) and (orientation: landscape) {

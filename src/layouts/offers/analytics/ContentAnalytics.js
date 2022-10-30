@@ -8,8 +8,8 @@ const ContentAnalytics = ({ active }) => {
         Podpięta analityka to potwierdzenie skutecznych działań
       </h2>
       <p className="offers-text-analytics">
-        Nasze <strong>kwalifikacje indwywidualne Googla</strong> to gwarancja
-        poprawnych umiejętność niezbędnych do śledzenia ruchu w twojej
+        Posiadane <strong>kwalifikacje indwywidualne Googla</strong> to
+        gwarancja poprawnych umiejętność niezbędnych do śledzenia ruchu w twojej
         aplikacji, optymalizacji treści, zwiększenia organicznych zasięgów –
         budowania rozpoznawalność twojej marki.
       </p>

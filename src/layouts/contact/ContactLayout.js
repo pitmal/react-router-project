@@ -61,7 +61,7 @@ const ContactLayout = () => {
     recaptcha.execute();
     setError(null);
 
-    await fetch("http://localhost:3002/prudentcode/server.php", {
+    await fetch("/server.php", {
       method: "POST",
       body: JSON.stringify(formValues),
       headers: {
@@ -144,7 +144,7 @@ const ContactLayout = () => {
         </div>
         <Recaptcha
           ref={ref => (recaptcha = ref)}
-          sitekey={"6LfFwNkUAAAAAKTwcnqeIZVhzDGZLueNXBRatiOR"}
+          sitekey={"6LdQwNkUAAAAAOEamBTym0o_v5beMwB84uMH1NrF"}
           onResolved={onResolved}
         />
       </div>

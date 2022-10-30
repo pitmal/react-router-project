@@ -11,7 +11,12 @@
 .logo-wrapper img {
   display: block;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
+  .logo-wrapper {
+    height: 80%;
+    flex-basis: 50%;
+    margin-left: 0;
+  }
   /* .logo-wrapper img {
     position: absolute;
     top: 0;
