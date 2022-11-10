@@ -6,7 +6,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* background-color: rgb(203, 208, 213); */
 }
-
+:root {
+  --headersFont: "Montserrat", sans-serif;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

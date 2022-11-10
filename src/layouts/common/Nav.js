@@ -6,32 +6,35 @@ const navigationItems = [
     id: 1,
     path: "/",
     exact: true,
-    name: "Home"
+    name: "Home",
   },
   {
     id: 2,
     path: "/oferta",
-    name: "Oferta"
+    name: "Oferta",
   },
   {
     id: 3,
     path: "/realizacje",
-    name: "Realizacje"
+    name: "Realizacje",
   },
   {
     id: 4,
     path: "/kontakt",
-    name: "Kontakt"
-  }
+    name: "Kontakt",
+  },
 ];
 
 const Nav = () => {
   const [activeBurger, setActiveBurger] = useState(false);
-  const nav = navigationItems.map(item => (
+  const nav = navigationItems.map((item) => (
     <NavLink
       key={item.id}
       to={item.path}
       exact={item.exact ? item.exact : null}
+      onClick={() => {
+        setActiveBurger(false);
+      }}
     >
       {item.name}
     </NavLink>

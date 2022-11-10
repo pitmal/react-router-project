@@ -35,7 +35,7 @@
   position: absolute;
   width: 0;
   height: 0;
-  border-bottom: 160px solid rgba(87, 94, 32, 0.8);
+  border-bottom: 160px solid rgba(297, 135, 60, 0.8);
   border-left: 160px solid transparent;
   border-right: 160px solid transparent;
   bottom: 160px;
@@ -68,7 +68,7 @@
   position: absolute;
   width: 0;
   height: 0;
-  border-bottom: 160px solid rgba(87, 94, 32, 0.8);
+  border-bottom: 160px solid rgba(297, 135, 60, 0.8);
   border-left: 160px solid transparent;
   border-right: 160px solid transparent;
   bottom: 160px;
@@ -76,35 +76,45 @@
 }
 /* ---------------------- text ----------------- */
 .offers-title {
+  width: 80%;
+  font-family: var(--headersFont);
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 400;
   z-index: 2;
 }
 .offers-text {
+  width: 50%;
   text-align: center;
   z-index: 2;
   font-size: 1.4rem;
   padding: 10%;
+  line-height: 40px;
 }
 @media (orientation: landscape) and (max-width: 823px) {
   .offers-title {
+    width: 80%;
     padding-top: 10%;
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-transform: uppercase;
   }
   .offers-text {
+    width: 80%;
     font-size: 1rem;
     padding: 0 5%;
+    line-height: 1.2rem;
   }
 }
 @media (orientation: portrait) and (max-width: 414px) {
   .offers-title {
+    width: 90%;
     padding-top: 20%;
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-transform: uppercase;
   }
   .offers-text {
+    width: 80%;
     font-size: 1rem;
+    line-height: 1.5rem;
   }
 }

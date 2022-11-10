@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Header from "../common/Header";
 import Footer from "../common/Footer";
 import imgContact from "../../images/kontakt-page.jpg";
 import "../../styles/ContactLayout.css";
-import HandelFixedNav from "../common/HandleFixedNav";
 import Pentagon from "../../components/Pentagon";
 import Recaptcha from "react-google-invisible-recaptcha";
+
 const ContactLayout = () => {
   let recaptcha = React.createRef();
   const [error, setError] = useState(null);
@@ -13,24 +12,26 @@ const ContactLayout = () => {
   const [formValues, setFormValues] = useState({
     name: "",
     email: "",
-    msg: ""
+    msg: "",
   });
 
-  const { fixedNav, fixedNavActive } = HandelFixedNav();
   const [activeContact, setActiveContact] = useState("");
   const handleActiveContact = () => {
     setActiveContact("active");
   };
+
   useEffect(() => {
     handleActiveContact();
   });
-  const handleValue = e => {
+
+  const handleValue = (e) => {
     setFormValues({
       ...formValues,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
-  const validate = formValues => {
+
+  const validate = (formValues) => {
     if (!formValues.name) {
       return "Podaj proszę swoje imię";
     } else if (formValues.name.length < 2) {
@@ -51,7 +52,7 @@ const ContactLayout = () => {
 
     return null;
   };
-  const handleSubmit = async e => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const formError = validate(formValues);
     if (formError) {
@@ -61,31 +62,34 @@ const ContactLayout = () => {
     recaptcha.execute();
     setError(null);
 
-    await fetch("/server.php", {
-      method: "POST",
-      body: JSON.stringify(formValues),
-      headers: {
-        "Content-Type": "application/json"
+    await fetch(
+      `${process.env.REACT_APP_BACKEND_URL}/api/prudentCodeMailServices`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ formValues }),
       }
-    }).then(response => {
-      if (response.status === 200) {
-        response.json().then(data => {
-          if (data.status === "success") {
-            setMessage(data.message);
-          } else if (data.status === "fail") {
-            setError(`Wiadomość nie została wysłana - ${data.error}`);
-          }
-        });
-      } else if (response.status !== 200) {
-        setError("wiadomość nie została wysłana");
-      }
-    });
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.status === "success") {
+          setFormValues({
+            name: "",
+            email: "",
+            msg: "",
+          });
+          setMessage(data.message);
+        } else if (data.status === "fail") {
+          setError(`Wiadomość nie została wysłana - ${data.error}`);
+        }
+      });
   };
 
   const onResolved = () => {};
   return (
     <>
-      <Header fixed={fixedNav} active={fixedNavActive} />
       <div
         className="contact-page"
         style={{ backgroundImage: `url(${imgContact})` }}
@@ -125,6 +129,7 @@ const ContactLayout = () => {
               name="name"
               onChange={handleValue}
               placeholder="wpisz imię"
+              value={formValues.name}
             />
 
             <input
@@ -132,18 +137,20 @@ const ContactLayout = () => {
               name="email"
               onChange={handleValue}
               placeholder="podaj swój e-mail"
+              value={formValues.email}
             />
             <textarea
               id="text-area"
               name="msg"
               onChange={handleValue}
               placeholder="wpisz treść wiadomości"
+              value={formValues.msg}
             ></textarea>
             <input type="submit" value="Wyślij" />
           </form>
         </div>
         <Recaptcha
-          ref={ref => (recaptcha = ref)}
+          ref={(ref) => (recaptcha = ref)}
           sitekey={"6LdQwNkUAAAAAOEamBTym0o_v5beMwB84uMH1NrF"}
           onResolved={onResolved}
         />

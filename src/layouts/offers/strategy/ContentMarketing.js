@@ -5,15 +5,15 @@ const ContentMarketing = ({ active }) => {
   return (
     <>
       <h2 className="offers-title-marketing">
-        Świadomie zbuduje wiarygodność twojej marki{" "}
+        Zbuduj świadomie wiarygodność twojej marki{" "}
       </h2>
       <p className="offers-text-marketing">
         Marketing internetowy odgrywa ogromna rolę w procesie poznawania
         marki,ustawienie odpowiednio zoptymalizowanej kampanii reklamowej obniży
         koszty pozyskania klienta a przemyślane określenie grup docelowych
-        korzystnie wpłynie na zwrot z inwestycji.Stworzę dla ciebie{" "}
+        korzystnie wpłynie na zwrot z inwestycji.Stworzymy dla ciebie{" "}
         <strong>
-          kampanie CPC, poprowadzę Sociale, przeprowadzę audyt SEO
+          kampanie CPC, poprowadzimy Sociale, przeprowadzimy audyt SEO
         </strong>
       </p>
       <Pentagon

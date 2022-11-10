@@ -15,7 +15,7 @@
   .logo-wrapper {
     height: 80%;
     flex-basis: 50%;
-    margin-left: 0;
+    margin-left: 10px;
   }
   /* .logo-wrapper img {
     position: absolute;

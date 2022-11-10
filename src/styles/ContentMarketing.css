@@ -76,36 +76,46 @@
 }
 /* -------------- text--------------------- */
 .offers-title-marketing {
+  width: 80%;
+  font-family: var(--headersFont);
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 400;
   z-index: 2;
 }
 .offers-text-marketing {
+  width: 50%;
   color: white;
   text-align: center;
   z-index: 2;
   font-size: 1.4rem;
   padding: 10%;
+  line-height: 40px;
 }
 @media (orientation: landscape) and (max-width: 823px) {
   .offers-title-marketing {
-    padding-top: 10%;
-    font-size: 1.2rem;
+    width: 80%;
+    padding-top: 0;
+    font-size: 2rem;
     text-transform: uppercase;
   }
   .offers-text-marketing {
+    width: 80%;
     font-size: 1rem;
     padding: 0 5%;
+    line-height: 1.2rem;
   }
 }
 @media (orientation: portrait) and (max-width: 414px) {
   .offers-title-marketing {
+    width: 90%;
     padding-top: 20%;
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-transform: uppercase;
   }
   .offers-text-marketing {
+    width: 90%;
     font-size: 1rem;
+    line-height: 1.5rem;
   }
 }

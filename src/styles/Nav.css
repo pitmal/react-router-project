@@ -25,16 +25,19 @@ nav.main-nav ul a {
   text-decoration: none;
   cursor: pointer;
   color: rgb(45, 46, 45);
-  /* border-radius: 5px; */
-  transition: 0.3s;
+  border-radius: 25px;
+  transition: 1s;
+  box-shadow: none;
 }
 
 nav.main-nav ul a.active {
-  background-color: rgb(203, 208, 213);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 nav.main-nav ul a:hover {
-  background-color: rgb(203, 208, 213);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 /* -----------nav-burger------------------ */
 nav.burger-nav {

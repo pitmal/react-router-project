@@ -4,3 +4,14 @@ body {
   box-sizing: border-box;
   color: rgb(45, 46, 45);
 }
+body::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 0 5px 5px 0;
+  background-color: white;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  background-color: gray;
+}
