@@ -17,7 +17,6 @@ const ContentResponsive = ({ active }) => {
         <strong>
           aplikacja internetowa lub responsywna strona internetowa.
         </strong>
-        Tworzymy rozwiązania oparte o najnowsze technologie dostępne na rynku.
       </p>
       <Pentagon
         key="green"

@@ -8,8 +8,8 @@ const TitleResponsive = () => {
       style={{ backgroundImage: `url(${imgResponsive})` }}
     >
       <div className="h1wrapper">
-        <h1 className="offers">Projekt strony responsywnej,aplikacji</h1>
-        <p className="offersAlt">lub serwisu internetowego</p>
+        <h1 className="offers">Projekt strony responsywnej</h1>
+        <p className="offersAlt">aplikacji lub serwisu internetowego</p>
       </div>
     </div>
   );
